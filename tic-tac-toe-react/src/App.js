@@ -1,14 +1,14 @@
 import './App.css';
 
-import { Box } from './components/Box';
+import { Board } from './components/Board';
 
 function App() {
     const board = ["X", "X", "X", "X", "X", "X", "X", "X", "X"]
-  return (
-    <div className="App">
-      <Box value="X" onclick={null}/>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Board board={board} onclick={null}/>
+        </div>
+    );
 }
 
 export default App;
